@@ -1,0 +1,206 @@
+2026-11-24 09:04:49 | ERROR   | [ETL] Falha na leitura/validação do Excel oficial. Ativando fallback para snapshot CSV.
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Projeto Portf\dados.py", line 177, in carregar_bases_oficiais
+    bruto_metas = pd.read_excel(arq_metas, sheet_name="Metas_UF", engine="openpyxl")
+  File "C:\Users\ASUS\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\excel\_base.py", line 526, in read_excel
+    data = io._reader.parse(
+        sheet_name=sheet_name,
+    ...<20 lines>...
+        dtype_backend=dtype_backend,
+    )
+  File "C:\Users\ASUS\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\excel\_base.py", line 787, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "C:\Users\ASUS\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\excel\_openpyxl.py", line 706, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\excel\_base.py", line 637, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'Metas_UF' not found
+
+2026-11-24 09:04:49 | ERROR   | [CLONE] main.py falhou — Clone de Contingência assumiu o controle visual
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Projeto Portf\dados.py", line 177, in carregar_bases_oficiais
+    bruto_metas = pd.read_excel(arq_metas, sheet_name="Metas_UF", engine="openpyxl")
+  File "C:\Users\ASUS\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\excel\_base.py", line 526, in read_excel
+    data = io._reader.parse(
+        sheet_name=sheet_name,
+    ...<20 lines>...
+        dtype_backend=dtype_backend,
+    )
+  File "C:\Users\ASUS\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\excel\_base.py", line 787, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "C:\Users\ASUS\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\excel\_openpyxl.py", line 706, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\excel\_base.py", line 637, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'Metas_UF' not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Projeto Portf\clone.py", line 196, in <module>
+    runpy.run_path(str(RAIZ / "main.py"), run_name="__main__")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 294, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\ASUS\Projeto Portf\main.py", line 280, in <module>
+    executar_app()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\ASUS\Projeto Portf\main.py", line 256, in executar_app
+    df_lancamentos, df_metas, df_estados = carregar_bases_oficiais()
+                                           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\ASUS\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\streamlit\runtime\caching\cache_utils.py", line 762, in __call__
+    return self._get_or_create_cached_value(args, kwargs, spinner_message)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\streamlit\runtime\caching\cache_utils.py", line 823, in _get_or_create_cached_value
+    return self._handle_cache_miss(cache, value_key, func_args, func_kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\streamlit\runtime\caching\cache_utils.py", line 887, in _handle_cache_miss
+    computed_value = self._info.func(*func_args, **func_kwargs)
+  File "C:\Users\ASUS\Projeto Portf\dados.py", line 212, in carregar_bases_oficiais
+    df_lanc, df_metas, df_estados, idade = ler_snapshots_locais()
+                                           ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\ASUS\Projeto Portf\dados.py", line 143, in ler_snapshots_locais
+    df_estados = pd.read_csv(SNAPSHOT_ESTADOS)
+  File "C:\Users\ASUS\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\parsers\readers.py", line 1866, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\ASUS\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\parsers\readers.py", line 423, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\ASUS\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\parsers\readers.py", line 2721, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\parsers\readers.py", line 3006, in _make_engine
+    return mapping[engine](f, **self.options)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 107, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 724, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 909, in pandas._libs.parsers.TextReader._get_header
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x9c in position 10: invalid start byte
+
+2026-11-24 09:05:13 | ERROR   | [ETL] Falha na leitura/validação do Excel oficial. Ativando fallback para snapshot CSV.
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Projeto Portf\dados.py", line 177, in carregar_bases_oficiais
+    bruto_metas = pd.read_excel(arq_metas, sheet_name="Metas_UF", engine="openpyxl")
+  File "C:\Users\ASUS\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\excel\_base.py", line 526, in read_excel
+    data = io._reader.parse(
+        sheet_name=sheet_name,
+    ...<20 lines>...
+        dtype_backend=dtype_backend,
+    )
+  File "C:\Users\ASUS\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\excel\_base.py", line 787, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "C:\Users\ASUS\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\excel\_openpyxl.py", line 706, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\excel\_base.py", line 637, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'Metas_UF' not found
+
+2026-11-24 09:09:02 | ERROR   | [ETL] Falha na leitura/validação do Excel oficial. Ativando fallback para snapshot CSV.
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Projeto Portf\dados.py", line 247, in carregar_bases_oficiais
+    bruto_metas = _ler_aba_inteligente(arq_metas, "Metas_UF", SCHEMA_METAS)
+  File "C:\Users\ASUS\Projeto Portf\dados.py", line 82, in _ler_aba_inteligente
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: A aba 'Metas_UF' não existe em 'Metas_e_Cadastro_UF.xlsx'. Abas encontradas neste arquivo: ['Lancamentos', 'Resumo_DRE_UF']
+
+2026-11-24 09:09:06 | ERROR   | [ETL] Falha na leitura/validação do Excel oficial. Ativando fallback para snapshot CSV.
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Projeto Portf\dados.py", line 247, in carregar_bases_oficiais
+    bruto_metas = _ler_aba_inteligente(arq_metas, "Metas_UF", SCHEMA_METAS)
+  File "C:\Users\ASUS\Projeto Portf\dados.py", line 82, in _ler_aba_inteligente
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: A aba 'Metas_UF' não existe em 'Metas_e_Cadastro_UF.xlsx'. Abas encontradas neste arquivo: ['Lancamentos', 'Resumo_DRE_UF']
+
+2026-11-24 09:09:36 | ERROR   | [ETL] Falha na leitura/validação do Excel oficial. Ativando fallback para snapshot CSV.
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Projeto Portf\dados.py", line 247, in carregar_bases_oficiais
+    bruto_metas = _ler_aba_inteligente(arq_metas, "Metas_UF", SCHEMA_METAS)
+  File "C:\Users\ASUS\Projeto Portf\dados.py", line 82, in _ler_aba_inteligente
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: A aba 'Metas_UF' não existe em 'Metas_e_Cadastro_UF.xlsx'. Abas encontradas neste arquivo: ['Lancamentos', 'Resumo_DRE_UF']
+
+2026-11-24 09:10:27 | ERROR   | [ETL] Falha na leitura/validação do Excel oficial. Ativando fallback para snapshot CSV.
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Projeto Portf\dados.py", line 247, in carregar_bases_oficiais
+    bruto_metas = _ler_aba_inteligente(arq_metas, "Metas_UF", SCHEMA_METAS)
+  File "C:\Users\ASUS\Projeto Portf\dados.py", line 82, in _ler_aba_inteligente
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: A aba 'Metas_UF' não existe em 'Metas_e_Cadastro_UF.xlsx'. Abas encontradas neste arquivo: ['Lancamentos', 'Resumo_DRE_UF']
+
+2026-11-24 09:12:49 | ERROR   | [ETL] Falha na leitura/validação do Excel oficial. Ativando fallback para snapshot CSV.
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Projeto Portf\dados.py", line 247, in carregar_bases_oficiais
+    bruto_metas = _ler_aba_inteligente(arq_metas, "Metas_UF", SCHEMA_METAS)
+  File "C:\Users\ASUS\Projeto Portf\dados.py", line 82, in _ler_aba_inteligente
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: A aba 'Metas_UF' não existe em 'Metas_e_Cadastro_UF.xlsx'. Abas encontradas neste arquivo: ['Lancamentos', 'Resumo_DRE_UF']
+
+2026-11-24 09:15:01 | ERROR   | [ETL] Falha na leitura/validação do Excel oficial. Ativando fallback para snapshot CSV.
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Projeto Portf\dados.py", line 241, in carregar_bases_oficiais
+    raise FileNotFoundError(
+    ...<2 lines>...
+    )
+FileNotFoundError: Planilhas oficiais ausentes em 'C:\Users\ASUS\Projeto Portf\dados_locais': Base_Lancamentos_DRE.xlsx / Metas_e_Cadastro_UF.xlsx.
+
+2026-11-24 09:19:34 | ERROR   | [CLONE] main.py falhou — Clone de Contingência assumiu o controle visual
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Projeto Portf\clone.py", line 196, in <module>
+    runpy.run_path(str(RAIZ / "main.py"), run_name="__main__")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 293, in run_path
+  File "<frozen runpy>", line 266, in _get_code_from_file
+  File "C:\Users\ASUS\Projeto Portf\main.py", line 193
+    melhor_uf = df_mapa.sort_values("Margem %", ascending=False).iloc[0]
+IndentationError: unexpected indent
+
+2026-11-24 09:21:00 | ERROR   | [CLONE] main.py falhou — Clone de Contingência assumiu o controle visual
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Projeto Portf\clone.py", line 196, in <module>
+    runpy.run_path(str(RAIZ / "main.py"), run_name="__main__")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 293, in run_path
+  File "<frozen runpy>", line 266, in _get_code_from_file
+  File "C:\Users\ASUS\Projeto Portf\main.py", line 191
+    qtd_abaixo = int((df_mapa["Margem %"] < df_mapa["Meta Margem %"]).sum())
+IndentationError: unexpected indent
+
+2026-11-24 09:29:58 | ERROR   | [CLONE] main.py falhou — Clone de Contingência assumiu o controle visual
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Projeto Portf\clone.py", line 282, in <module>
+    runpy.run_path(str(RAIZ / "main.py"), run_name="__main__")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 293, in run_path
+  File "<frozen runpy>", line 266, in _get_code_from_file
+  File "C:\Users\ASUS\Projeto Portf\main.py", line 375
+    renderizar_pagina_principal([]
+                               ^
+SyntaxError: '(' was never closed
+
+2026-11-26 11:03:17 | ERROR   | [CLONE] main.py falhou — Clone de Contingência assumiu o controle visual
+Traceback (most recent call last):
+  File "C:\Users\gabrielbuarque\Project Port\clone.py", line 282, in <module>
+    runpy.run_path(str(RAIZ / "main.py"), run_name="__main__")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 264, in _get_code_from_file
+  File "C:\Users\gabrielbuarque\Project Port\main.py", line 375
+    renderiz[]
+             ^
+SyntaxError: invalid syntax
+

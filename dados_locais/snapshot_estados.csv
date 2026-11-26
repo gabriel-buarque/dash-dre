@@ -1,0 +1,15 @@
+﻿UF,Estado,Região,Capital_Base,Lat,Lon,Gerente_Regional,Modal_Principal
+SP,São Paulo,Sudeste,São Paulo,-23.5505,-46.6333,Mariana Costa,Rodoviário Dedicado
+RJ,Rio de Janeiro,Sudeste,Rio de Janeiro,-22.9068,-43.1729,Carlos Eduardo Lima,Rodoviário
+MG,Minas Gerais,Sudeste,Belo Horizonte,-19.9167,-43.9345,Fernanda Ribeiro,Rodoviário Misto
+ES,Espírito Santo,Sudeste,Vitória,-20.3155,-40.3128,Fernanda Ribeiro,Rodoviário
+PE,Pernambuco,Nordeste,Recife,-8.0476,-34.877,Lucas Cavalcanti,Hub Regional + Cabotagem
+BA,Bahia,Nordeste,Salvador,-12.9714,-38.5014,Lucas Cavalcanti,Rodoviário
+CE,Ceará,Nordeste,Fortaleza,-3.7172,-38.5433,Patrícia Gomes,Cabotagem + Rodoviário
+PR,Paraná,Sul,Curitiba,-25.4284,-49.2733,Roberto Almeida,Rodoviário Próprio
+SC,Santa Catarina,Sul,Florianópolis,-27.5954,-48.548,Roberto Almeida,Rodoviário
+RS,Rio Grande do Sul,Sul,Porto Alegre,-30.0346,-51.2177,Juliana Martins,Rodoviário Longa Dist.
+GO,Goiás,Centro-Oeste,Goiânia,-16.6869,-49.2648,Thiago Nogueira,Rodoviário
+DF,Distrito Federal,Centro-Oeste,Brasília,-15.7975,-47.8919,Thiago Nogueira,Rodoviário Expresso
+PA,Pará,Norte,Belém,-1.4558,-48.4902,André Vasconcelos,Rodoviário + Fluvial
+AM,Amazonas,Norte,Manaus,-3.119,-60.0217,André Vasconcelos,Fluvial + Aéreo Urgente

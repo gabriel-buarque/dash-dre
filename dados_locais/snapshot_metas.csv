@@ -1,0 +1,169 @@
+﻿UF,Estado,Região,Mês,Nome_Mês,Meta_Receita,Teto_Custos_Despesas,Meta_Margem_Pct,Dias_Uteis
+SP,São Paulo,Sudeste,1,Janeiro,1581755.19,1360309.46,0.14,21
+SP,São Paulo,Sudeste,2,Fevereiro,1631520.0,1403107.2,0.14,18
+SP,São Paulo,Sudeste,3,Março,1699500.0,1461570.0,0.14,22
+SP,São Paulo,Sudeste,4,Abril,1767480.0,1520032.8,0.14,20
+SP,São Paulo,Sudeste,5,Maio,1817244.81,1562830.54,0.14,20
+SP,São Paulo,Sudeste,6,Junho,1835460.0,1578495.6,0.14,21
+SP,São Paulo,Sudeste,7,Julho,1817244.81,1562830.54,0.14,23
+SP,São Paulo,Sudeste,8,Agosto,1767480.0,1520032.8,0.14,21
+SP,São Paulo,Sudeste,9,Setembro,1699500.0,1461570.0,0.14,21
+SP,São Paulo,Sudeste,10,Outubro,1631520.0,1403107.2,0.14,21
+SP,São Paulo,Sudeste,11,Novembro,1581755.19,1360309.46,0.14,19
+SP,São Paulo,Sudeste,12,Dezembro,1563540.0,1344644.4,0.14,22
+RJ,Rio de Janeiro,Sudeste,1,Janeiro,757325.21,643726.43,0.15,21
+RJ,Rio de Janeiro,Sudeste,2,Fevereiro,781152.0,663979.2,0.15,18
+RJ,Rio de Janeiro,Sudeste,3,Março,813700.0,691645.0,0.15,22
+RJ,Rio de Janeiro,Sudeste,4,Abril,846248.0,719310.8,0.15,20
+RJ,Rio de Janeiro,Sudeste,5,Maio,870074.79,739563.57,0.15,20
+RJ,Rio de Janeiro,Sudeste,6,Junho,878796.0,746976.6,0.15,21
+RJ,Rio de Janeiro,Sudeste,7,Julho,870074.79,739563.57,0.15,23
+RJ,Rio de Janeiro,Sudeste,8,Agosto,846248.0,719310.8,0.15,21
+RJ,Rio de Janeiro,Sudeste,9,Setembro,813700.0,691645.0,0.15,21
+RJ,Rio de Janeiro,Sudeste,10,Outubro,781152.0,663979.2,0.15,21
+RJ,Rio de Janeiro,Sudeste,11,Novembro,757325.21,643726.43,0.15,19
+RJ,Rio de Janeiro,Sudeste,12,Dezembro,748604.0,636313.4,0.15,22
+MG,Minas Gerais,Sudeste,1,Janeiro,901121.14,720896.91,0.2,21
+MG,Minas Gerais,Sudeste,2,Fevereiro,929472.0,743577.6,0.2,18
+MG,Minas Gerais,Sudeste,3,Março,968200.0,774560.0,0.2,22
+MG,Minas Gerais,Sudeste,4,Abril,1006928.0,805542.4,0.2,20
+MG,Minas Gerais,Sudeste,5,Maio,1035278.86,828223.09,0.2,20
+MG,Minas Gerais,Sudeste,6,Junho,1045656.0,836524.8,0.2,21
+MG,Minas Gerais,Sudeste,7,Julho,1035278.86,828223.09,0.2,23
+MG,Minas Gerais,Sudeste,8,Agosto,1006928.0,805542.4,0.2,21
+MG,Minas Gerais,Sudeste,9,Setembro,968200.0,774560.0,0.2,21
+MG,Minas Gerais,Sudeste,10,Outubro,929472.0,743577.6,0.2,21
+MG,Minas Gerais,Sudeste,11,Novembro,901121.14,720896.91,0.2,19
+MG,Minas Gerais,Sudeste,12,Dezembro,890744.0,712595.2,0.2,22
+ES,Espírito Santo,Sudeste,1,Janeiro,335523.83,273451.92,0.185,21
+ES,Espírito Santo,Sudeste,2,Fevereiro,346080.0,282055.2,0.185,18
+ES,Espírito Santo,Sudeste,3,Março,360500.0,293807.5,0.185,22
+ES,Espírito Santo,Sudeste,4,Abril,374920.0,305559.8,0.185,20
+ES,Espírito Santo,Sudeste,5,Maio,385476.17,314163.08,0.185,20
+ES,Espírito Santo,Sudeste,6,Junho,389340.0,317312.1,0.185,21
+ES,Espírito Santo,Sudeste,7,Julho,385476.17,314163.08,0.185,23
+ES,Espírito Santo,Sudeste,8,Agosto,374920.0,305559.8,0.185,21
+ES,Espírito Santo,Sudeste,9,Setembro,360500.0,293807.5,0.185,21
+ES,Espírito Santo,Sudeste,10,Outubro,346080.0,282055.2,0.185,21
+ES,Espírito Santo,Sudeste,11,Novembro,335523.83,273451.92,0.185,19
+ES,Espírito Santo,Sudeste,12,Dezembro,331660.0,270302.9,0.185,22
+PE,Pernambuco,Nordeste,1,Janeiro,642288.47,500985.01,0.22,21
+PE,Pernambuco,Nordeste,2,Fevereiro,662496.0,516746.88,0.22,18
+PE,Pernambuco,Nordeste,3,Março,690100.0,538278.0,0.22,22
+PE,Pernambuco,Nordeste,4,Abril,717704.0,559809.12,0.22,20
+PE,Pernambuco,Nordeste,5,Maio,737911.53,575570.99,0.22,20
+PE,Pernambuco,Nordeste,6,Junho,745308.0,581340.24,0.22,21
+PE,Pernambuco,Nordeste,7,Julho,737911.53,575570.99,0.22,23
+PE,Pernambuco,Nordeste,8,Agosto,717704.0,559809.12,0.22,21
+PE,Pernambuco,Nordeste,9,Setembro,690100.0,538278.0,0.22,21
+PE,Pernambuco,Nordeste,10,Outubro,662496.0,516746.88,0.22,21
+PE,Pernambuco,Nordeste,11,Novembro,642288.47,500985.01,0.22,19
+PE,Pernambuco,Nordeste,12,Dezembro,634892.0,495215.76,0.22,22
+BA,Bahia,Nordeste,1,Janeiro,575183.7,471650.63,0.18,21
+BA,Bahia,Nordeste,2,Fevereiro,593280.0,486489.6,0.18,18
+BA,Bahia,Nordeste,3,Março,618000.0,506760.0,0.18,22
+BA,Bahia,Nordeste,4,Abril,642720.0,527030.4,0.18,20
+BA,Bahia,Nordeste,5,Maio,660816.3,541869.37,0.18,20
+BA,Bahia,Nordeste,6,Junho,667440.0,547300.8,0.18,21
+BA,Bahia,Nordeste,7,Julho,660816.3,541869.37,0.18,23
+BA,Bahia,Nordeste,8,Agosto,642720.0,527030.4,0.18,21
+BA,Bahia,Nordeste,9,Setembro,618000.0,506760.0,0.18,21
+BA,Bahia,Nordeste,10,Outubro,593280.0,486489.6,0.18,21
+BA,Bahia,Nordeste,11,Novembro,575183.7,471650.63,0.18,19
+BA,Bahia,Nordeste,12,Dezembro,568560.0,466219.2,0.18,22
+CE,Ceará,Nordeste,1,Janeiro,421801.38,339550.11,0.195,21
+CE,Ceará,Nordeste,2,Fevereiro,435072.0,350232.96,0.195,18
+CE,Ceará,Nordeste,3,Março,453200.0,364826.0,0.195,22
+CE,Ceará,Nordeste,4,Abril,471328.0,379419.04,0.195,20
+CE,Ceará,Nordeste,5,Maio,484598.62,390101.89,0.195,20
+CE,Ceará,Nordeste,6,Junho,489456.0,394012.08,0.195,21
+CE,Ceará,Nordeste,7,Julho,484598.62,390101.89,0.195,23
+CE,Ceará,Nordeste,8,Agosto,471328.0,379419.04,0.195,21
+CE,Ceará,Nordeste,9,Setembro,453200.0,364826.0,0.195,21
+CE,Ceará,Nordeste,10,Outubro,435072.0,350232.96,0.195,21
+CE,Ceará,Nordeste,11,Novembro,421801.38,339550.11,0.195,19
+CE,Ceará,Nordeste,12,Dezembro,416944.0,335639.92,0.195,22
+PR,Paraná,Sul,1,Janeiro,671047.65,546903.83,0.185,21
+PR,Paraná,Sul,2,Fevereiro,692160.0,564110.4,0.185,18
+PR,Paraná,Sul,3,Março,721000.0,587615.0,0.185,22
+PR,Paraná,Sul,4,Abril,749840.0,611119.6,0.185,20
+PR,Paraná,Sul,5,Maio,770952.35,628326.17,0.185,20
+PR,Paraná,Sul,6,Junho,778680.0,634624.2,0.185,21
+PR,Paraná,Sul,7,Julho,770952.35,628326.17,0.185,23
+PR,Paraná,Sul,8,Agosto,749840.0,611119.6,0.185,21
+PR,Paraná,Sul,9,Setembro,721000.0,587615.0,0.185,21
+PR,Paraná,Sul,10,Outubro,692160.0,564110.4,0.185,21
+PR,Paraná,Sul,11,Novembro,671047.65,546903.83,0.185,19
+PR,Paraná,Sul,12,Dezembro,663320.0,540605.8,0.185,22
+SC,Santa Catarina,Sul,1,Janeiro,551217.72,443730.26,0.195,21
+SC,Santa Catarina,Sul,2,Fevereiro,568560.0,457690.8,0.195,18
+SC,Santa Catarina,Sul,3,Março,592250.0,476761.25,0.195,22
+SC,Santa Catarina,Sul,4,Abril,615940.0,495831.7,0.195,20
+SC,Santa Catarina,Sul,5,Maio,633282.28,509792.24,0.195,20
+SC,Santa Catarina,Sul,6,Junho,639630.0,514902.15,0.195,21
+SC,Santa Catarina,Sul,7,Julho,633282.28,509792.24,0.195,23
+SC,Santa Catarina,Sul,8,Agosto,615940.0,495831.7,0.195,21
+SC,Santa Catarina,Sul,9,Setembro,592250.0,476761.25,0.195,21
+SC,Santa Catarina,Sul,10,Outubro,568560.0,457690.8,0.195,21
+SC,Santa Catarina,Sul,11,Novembro,551217.72,443730.26,0.195,19
+SC,Santa Catarina,Sul,12,Dezembro,544870.0,438620.35,0.195,22
+RS,Rio Grande do Sul,Sul,1,Janeiro,527251.73,442891.45,0.16,21
+RS,Rio Grande do Sul,Sul,2,Fevereiro,543840.0,456825.6,0.16,18
+RS,Rio Grande do Sul,Sul,3,Março,566500.0,475860.0,0.16,22
+RS,Rio Grande do Sul,Sul,4,Abril,589160.0,494894.4,0.16,20
+RS,Rio Grande do Sul,Sul,5,Maio,605748.27,508828.55,0.16,20
+RS,Rio Grande do Sul,Sul,6,Junho,611820.0,513928.8,0.16,21
+RS,Rio Grande do Sul,Sul,7,Julho,605748.27,508828.55,0.16,23
+RS,Rio Grande do Sul,Sul,8,Agosto,589160.0,494894.4,0.16,21
+RS,Rio Grande do Sul,Sul,9,Setembro,566500.0,475860.0,0.16,21
+RS,Rio Grande do Sul,Sul,10,Outubro,543840.0,456825.6,0.16,21
+RS,Rio Grande do Sul,Sul,11,Novembro,527251.73,442891.45,0.16,19
+RS,Rio Grande do Sul,Sul,12,Dezembro,521180.0,437791.2,0.16,22
+GO,Goiás,Centro-Oeste,1,Janeiro,402628.59,330155.44,0.18,21
+GO,Goiás,Centro-Oeste,2,Fevereiro,415296.0,340542.72,0.18,18
+GO,Goiás,Centro-Oeste,3,Março,432600.0,354732.0,0.18,22
+GO,Goiás,Centro-Oeste,4,Abril,449904.0,368921.28,0.18,20
+GO,Goiás,Centro-Oeste,5,Maio,462571.41,379308.56,0.18,20
+GO,Goiás,Centro-Oeste,6,Junho,467208.0,383110.56,0.18,21
+GO,Goiás,Centro-Oeste,7,Julho,462571.41,379308.56,0.18,23
+GO,Goiás,Centro-Oeste,8,Agosto,449904.0,368921.28,0.18,21
+GO,Goiás,Centro-Oeste,9,Setembro,432600.0,354732.0,0.18,21
+GO,Goiás,Centro-Oeste,10,Outubro,415296.0,340542.72,0.18,21
+GO,Goiás,Centro-Oeste,11,Novembro,402628.59,330155.44,0.18,19
+GO,Goiás,Centro-Oeste,12,Dezembro,397992.0,326353.44,0.18,22
+DF,Distrito Federal,Centro-Oeste,1,Janeiro,354696.62,287304.26,0.19,21
+DF,Distrito Federal,Centro-Oeste,2,Fevereiro,365856.0,296343.36,0.19,18
+DF,Distrito Federal,Centro-Oeste,3,Março,381100.0,308691.0,0.19,22
+DF,Distrito Federal,Centro-Oeste,4,Abril,396344.0,321038.64,0.19,20
+DF,Distrito Federal,Centro-Oeste,5,Maio,407503.38,330077.74,0.19,20
+DF,Distrito Federal,Centro-Oeste,6,Junho,411588.0,333386.28,0.19,21
+DF,Distrito Federal,Centro-Oeste,7,Julho,407503.38,330077.74,0.19,23
+DF,Distrito Federal,Centro-Oeste,8,Agosto,396344.0,321038.64,0.19,21
+DF,Distrito Federal,Centro-Oeste,9,Setembro,381100.0,308691.0,0.19,21
+DF,Distrito Federal,Centro-Oeste,10,Outubro,365856.0,296343.36,0.19,21
+DF,Distrito Federal,Centro-Oeste,11,Novembro,354696.62,287304.26,0.19,19
+DF,Distrito Federal,Centro-Oeste,12,Dezembro,350612.0,283995.72,0.19,22
+PA,Pará,Norte,1,Janeiro,287591.85,258832.66,0.1,21
+PA,Pará,Norte,2,Fevereiro,296640.0,266976.0,0.1,18
+PA,Pará,Norte,3,Março,309000.0,278100.0,0.1,22
+PA,Pará,Norte,4,Abril,321360.0,289224.0,0.1,20
+PA,Pará,Norte,5,Maio,330408.15,297367.34,0.1,20
+PA,Pará,Norte,6,Junho,333720.0,300348.0,0.1,21
+PA,Pará,Norte,7,Julho,330408.15,297367.34,0.1,23
+PA,Pará,Norte,8,Agosto,321360.0,289224.0,0.1,21
+PA,Pará,Norte,9,Setembro,309000.0,278100.0,0.1,21
+PA,Pará,Norte,10,Outubro,296640.0,266976.0,0.1,21
+PA,Pará,Norte,11,Novembro,287591.85,258832.66,0.1,19
+PA,Pará,Norte,12,Dezembro,284280.0,255852.0,0.1,22
+AM,Amazonas,Norte,1,Janeiro,249246.27,229306.57,0.08,21
+AM,Amazonas,Norte,2,Fevereiro,257088.0,236520.96,0.08,18
+AM,Amazonas,Norte,3,Março,267800.0,246376.0,0.08,22
+AM,Amazonas,Norte,4,Abril,278512.0,256231.04,0.08,20
+AM,Amazonas,Norte,5,Maio,286353.73,263445.43,0.08,20
+AM,Amazonas,Norte,6,Junho,289224.0,266086.08,0.08,21
+AM,Amazonas,Norte,7,Julho,286353.73,263445.43,0.08,23
+AM,Amazonas,Norte,8,Agosto,278512.0,256231.04,0.08,21
+AM,Amazonas,Norte,9,Setembro,267800.0,246376.0,0.08,21
+AM,Amazonas,Norte,10,Outubro,257088.0,236520.96,0.08,21
+AM,Amazonas,Norte,11,Novembro,249246.27,229306.57,0.08,19
+AM,Amazonas,Norte,12,Dezembro,246376.0,226665.92,0.08,22
