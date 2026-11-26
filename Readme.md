@@ -78,7 +78,6 @@ A tabela abaixo ilustra a tese central explorada nos visuais do painel — por q
 O código foi fatiado em módulos independentes seguindo separação estrita de responsabilidades: ingestão e qualidade (`dados.py`), regras de caminho (`caminhos.py`), observabilidade (`alertas.py`), componentes gráficos (`graficos.py`), controles de estado e UI (`interface.py`), estilização (`estilo.py`), orquestração (`main.py`) e alta disponibilidade (`clone.py`).
 
 ### 1. Fluxo de Dados e Camadas de Proteção
-
 ```mermaid
 flowchart TB
     subgraph Origem["Camada de Origem (dados_locais/)"]
@@ -97,18 +96,19 @@ flowchart TB
     subgraph Storage["Persistência de Contingência"]
         S1["Escrita Atômica (.tmp -> os.replace)"]
         CSV["Snapshots Validados (.csv)"]
-        D1 -->|Sucesso| S1 --> CSV
-        G1 -.->|Quebra de Schema / Arquivo Ausente| CSV
+        D1 -->|"Sucesso"| S1
+        S1 --> CSV
+        G1 -.->|"Quebra de Schema / Arquivo Ausente"| CSV
     end
 
     subgraph App["Camada de Apresentação & Escudo"]
         CL["Entrypoint: clone.py"]
         MN["Orquestrador: main.py"]
         FB["Renderizador Offline: clone.py"]
-        CL -->|runpy.run_path| MN
+        CL -->|"runpy.run_path"| MN
         D1 --> MN
-        MN -.->|Exceção Crítica| CL
-        CL -->|Ativa Contingência (10 min)| FB
+        MN -.->|"Exceção Crítica"| CL
+        CL -->|"Ativa Contingência: 10 min"| FB
         CSV --> FB
     end
 
@@ -116,8 +116,9 @@ flowchart TB
         LG1["logs/pipeline_dre.log (INFO+)"]
         LG2["logs/app_errors.log (ERROR+)"]
         SMTP["Alerta SMTP c/ Rate Limit (15 min)"]
-        ETL & CL --> LG1
-        G1 & CL --> LG2 --> SMTP
+        D1 & CL --> LG1
+        G1 & CL --> LG2
+        LG2 --> SMTP
     end
 ```
 
